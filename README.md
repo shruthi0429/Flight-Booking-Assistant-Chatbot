@@ -2,7 +2,12 @@
 
 An AI-powered chatbot assistant for flight bookings, status checks, and travel inquiries. Integrates with Amadeus and AviationStack APIs for real-time flight data and uses GPT-4 for natural language interactions.
 
-![Streamlit App Screenshot](./screenshot.png) 
+
+![image](https://github.com/user-attachments/assets/ffb3696b-e13d-4d21-9b73-df96d56f9483)
+
+
+![image](https://github.com/user-attachments/assets/59cf6d10-e163-4fb8-8da9-ce81ff902912)
+
 
 
 ## Features
@@ -18,7 +23,29 @@ An AI-powered chatbot assistant for flight bookings, status checks, and travel i
 ---
 
 ## System Architecture
+# ✈️ Flight Booking Assistant Chatbot
 
+An AI-powered chatbot assistant for flight bookings, status checks, and travel inquiries. Integrates with Amadeus and AviationStack APIs for real-time flight data and uses GPT-4 for natural language interactions.
+
+![Streamlit App Screenshot](./screenshot.png) <!-- Replace with actual screenshot -->
+
+---
+
+## Features
+
+- **Flight Search**: Find available flights by origin, destination, and date.
+- **Booking Management**: Select and book flights directly in the app.
+- **Conversational AI**: Ask about baggage policies, seat availability, layovers, aircraft details, and flight status.
+- **API Integrations**: 
+  - Amadeus API for flight offers and IATA code lookup.
+  - AviationStack API for real-time flight status.
+- **Contextual Memory**: Maintains conversation history using `ConversationBufferMemory`.
+
+---
+
+## System Architecture
+
+```mermaid
 %%{init: {'theme': 'neutral'}}%%
 graph TD
     U[User] --> SF{{Streamlit Frontend<br>(app.py)}}
@@ -44,12 +71,6 @@ graph TD
     GPT --> CFG
 
     style MEM fill:#e1f5fe,stroke:#039be5
-
-### Key Components:
-- **User**: Interacts via Streamlit.
-- **Chatbot Utilities**: Handles NLP with GPT-4 and retains chat history via `ConversationBufferMemory`.
-- **Flight Utilities**: Manages API calls to Amadeus/AviationStack.
-- **Config File**: Centralizes API keys for authentication.
 
 
 ## Technologies Used
@@ -119,10 +140,3 @@ graph TD
 ---
 
 
-
-> **To Visualize the Architecture Diagram**:
-> 1. Copy the Mermaid code block above.
-> 2. Paste into [Mermaid Live Editor](https://mermaid.live/) or VS Code with a Mermaid extension.
-``` 
-
-Copy this entire markdown into a `README.md` file in your project root. Replace `yourusername` in the clone URL and add a real `screenshot.png` for the app preview.
