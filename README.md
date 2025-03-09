@@ -17,24 +17,24 @@ An AI-powered chatbot assistant for flight bookings, status checks, and travel i
 ## System Architecture
 
 %%{init: {'theme': 'neutral'}}%%
-graph TD
-    U[User] --> SF{{Streamlit Frontend<br>(app.py)}}
+flowchart TD
+    U[User] --> SF{{Streamlit Frontend}}
     
-    SF --> CU[[Chatbot Utilities<br>(chatbot_utils.py)]]
-    SF --> FU[[Flight Utilities<br>(flight_utils.py)]]
+    SF --> CU[[Chatbot Utilities]]
+    SF --> FU[[Flight Utilities]]
     
     subgraph "Chatbot Utilities Module"
         direction TB
         CHAIN[[Conversation Chain]]
         MEM[[Conversation Buffer Memory]]
-        CHAIN --> MEM[(Stores raw<br>conversation history)]
+        CHAIN --> MEM[(Stores raw conversation history)]
         CHAIN --> GPT[[OpenAI GPT-4]]
     end
     
     FU --> AMA[(Amadeus API)]
     FU --> AVI[(AviationStack API)]
     
-    CU --> CFG[[Config File<br>(config_chatbot.py)]]
+    CU --> CFG[[Config File]]
     FU --> CFG
     AMA --> CFG
     AVI --> CFG
@@ -47,6 +47,7 @@ graph TD
     style CU fill:#ffccbc,stroke:#ff7043
     style FU fill:#c8e6c9,stroke:#388e3c
     style CFG fill:#ffe082,stroke:#ff8f00
+
 
 
 ## Technologies Used
