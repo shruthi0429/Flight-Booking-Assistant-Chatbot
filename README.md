@@ -16,6 +16,8 @@ An AI-powered chatbot assistant for flight bookings, status checks, and travel i
 
 ## System Architecture
 
+
+```mermaid
 %%{init: {'theme': 'neutral'}}%%
 flowchart TD
     U[User] --> SF{{Streamlit Frontend}}
