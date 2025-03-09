@@ -49,7 +49,7 @@ flowchart TD
     style CU fill:#ffccbc,stroke:#ff7043
     style FU fill:#c8e6c9,stroke:#388e3c
     style CFG fill:#ffe082,stroke:#ff8f00
-
+```
 
 
 ## Technologies Used
