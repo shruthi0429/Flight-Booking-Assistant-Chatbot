@@ -16,7 +16,6 @@ An AI-powered chatbot assistant for flight bookings, status checks, and travel i
 
 ## System Architecture
 
-```mermaid
 %%{init: {'theme': 'neutral'}}%%
 graph TD
     U[User] --> SF{{Streamlit Frontend<br>(app.py)}}
@@ -24,11 +23,11 @@ graph TD
     SF --> CU[[Chatbot Utilities<br>(chatbot_utils.py)]]
     SF --> FU[[Flight Utilities<br>(flight_utils.py)]]
     
-    subgraph CU ["Chatbot Utilities Module"]
+    subgraph "Chatbot Utilities Module"
         direction TB
-        MEM[[Conversation Buffer Memory]]
         CHAIN[[Conversation Chain]]
-        CHAIN --> MEM[(Stores raw\nconversation history)]
+        MEM[[Conversation Buffer Memory]]
+        CHAIN --> MEM[(Stores raw<br>conversation history)]
         CHAIN --> GPT[[OpenAI GPT-4]]
     end
     
@@ -42,6 +41,12 @@ graph TD
     GPT --> CFG
 
     style MEM fill:#e1f5fe,stroke:#039be5
+    style CHAIN fill:#f0f4c3,stroke:#827717
+    style GPT fill:#d1c4e9,stroke:#673ab7
+    style SF fill:#b3e5fc,stroke:#0288d1
+    style CU fill:#ffccbc,stroke:#ff7043
+    style FU fill:#c8e6c9,stroke:#388e3c
+    style CFG fill:#ffe082,stroke:#ff8f00
 
 
 ## Technologies Used
@@ -99,6 +104,14 @@ graph TD
 - View the raw interaction history stored by `ConversationBufferMemory`.
 
 ---
+
+## Streamlit App
+
+![image](https://github.com/user-attachments/assets/ffb3696b-e13d-4d21-9b73-df96d56f9483)
+
+
+![image](https://github.com/user-attachments/assets/59cf6d10-e163-4fb8-8da9-ce81ff902912)
+
 
 ## Configuration
 
