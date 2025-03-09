@@ -2,35 +2,6 @@
 
 An AI-powered chatbot assistant for flight bookings, status checks, and travel inquiries. Integrates with Amadeus and AviationStack APIs for real-time flight data and uses GPT-4 for natural language interactions.
 
-
-![image](https://github.com/user-attachments/assets/ffb3696b-e13d-4d21-9b73-df96d56f9483)
-
-
-![image](https://github.com/user-attachments/assets/59cf6d10-e163-4fb8-8da9-ce81ff902912)
-
-
-
-## Features
-
-- **Flight Search**: Find available flights by origin, destination, and date.
-- **Booking Management**: Select and book flights directly in the app.
-- **Conversational AI**: Ask about baggage policies, seat availability, layovers, aircraft details, and flight status.
-- **API Integrations**: 
-  - Amadeus API for flight offers and IATA code lookup.
-  - AviationStack API for real-time flight status.
-- **Contextual Memory**: Maintains conversation history using `ConversationBufferMemory`.
-
----
-
-## System Architecture
-# ✈️ Flight Booking Assistant Chatbot
-
-An AI-powered chatbot assistant for flight bookings, status checks, and travel inquiries. Integrates with Amadeus and AviationStack APIs for real-time flight data and uses GPT-4 for natural language interactions.
-
-![Streamlit App Screenshot](./screenshot.png) <!-- Replace with actual screenshot -->
-
----
-
 ## Features
 
 - **Flight Search**: Find available flights by origin, destination, and date.
